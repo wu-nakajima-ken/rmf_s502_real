@@ -10,18 +10,18 @@ def generate_launch_description():
     # 定数としてパスを設定
     pkg_nav2_bringup = get_package_share_directory('nav2_bringup')
     
-    map_dir = LaunchConfiguration('map', default='/home/user/rmf_s502_v2/map.yaml')
-    param_dir = LaunchConfiguration('params_file', default='/home/user/rmf_s502_v2/limo_param.yaml')
+    map_dir = LaunchConfiguration('map', default='/home/user/rmf_s502_real/map.yaml')
+    param_dir = LaunchConfiguration('params_file', default='/home/user/rmf_s502_real/limo_param.yaml')
     
     # ランチ引数を定義
     declare_map_cmd = DeclareLaunchArgument(
         'map',
-        default_value='/home/user/rmf_s502_v2/map.yaml',
+        default_value='/home/user/rmf_s502_real/map.yaml',
         description='マップファイルへのフルパス')
     
     declare_params_cmd = DeclareLaunchArgument(
         'params_file',
-        default_value='/home/user/rmf_s502_v2/limo_param.yaml',
+        default_value='/home/user/rmf_s502_real/limo_param.yaml',
         description='パラメータファイルへのフルパス')
     
     # Nav2を起動する
