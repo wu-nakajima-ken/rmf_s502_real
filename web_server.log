@@ -1,0 +1,3 @@
+2023-05-02 12:04:15,214 ERROR The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+2023-05-02 12:08:23,300 DEBUG  ROS Time: 1682996903 |         Robot Status: <Response 241 bytes [200 OK]>
+2023-05-02 12:08:35,252 DEBUG  ROS Time: 1682996915 |         Task Status: []

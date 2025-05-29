@@ -1,0 +1,30 @@
+{
+  "world_name" : "S502 World",  
+  "valid_task": ["Loop"],
+  "task": {
+    "Delivery": {
+    },
+    "Loop": {
+      "places": [
+        "corridor_end",
+        "dock",
+        "bunker_dock",
+        "hunter_dock",
+        "toilet",
+        "hall1",
+        "hall2",
+        "stair",
+        "floor_door",
+        "toilet_near"
+      ]
+    },
+    "Clean": {
+    },
+    "Station": {
+    },
+    "Patrol": {
+    },
+    "Charging": {
+    }
+  }
+}

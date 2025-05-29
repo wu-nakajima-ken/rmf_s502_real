@@ -1,0 +1,32 @@
+<?xml version='1.0' ?>
+
+<launch>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="failover_mode" default="false"/>
+
+  <!-- Common launch -->
+  <include file="/home/user/rmf_s502_v2/common.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value ="/home/user/rmf_s502_v2/s502.rviz"/>
+    <arg name="initial_map" value ="s502"/>
+    <arg name="config_file" value="/home/user/rmf_s502_v2/s502.building.yaml"/>
+    <arg name="dashboard_config_file" value="/home/user/rmf_s502_v2/dashboard_config.json"/>
+  </include>
+  
+    <!-- TinyRobot fleet adapter and robot state aggregator needed for the TinyRobot slotcar_plugin -->
+  <group>
+    <let name="fleet_name" value="my_limo_fleet"/>
+    <include file="/home/user/rmf_s502_v2/myRobot_adapter.launch.xml">
+      <arg name="fleet_name" value="$(var fleet_name)"/>
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="/home/user/rmf_s502_v2/0.yaml" />
+    </include>
+    <include file="$(find-pkg-share rmf_fleet_adapter)/robot_state_aggregator.launch.xml">
+      <arg name="robot_prefix" value="my_limo_fleet"/>
+      <arg name="fleet_name" value="$(var fleet_name)"/>
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="failover_mode" value="$(var failover_mode)"/>
+    </include>
+  </group>
+
+</launch>

@@ -1,0 +1,120 @@
+building_name: s502
+doors: {}
+levels:
+  s502:
+    lanes:
+    - - 0
+      - 1
+      - {dock_name: t02, is_bidirectional: false, undock_name: t03}
+    - - 1
+      - 2
+      - {is_bidirectional: false, undock_name: t02}
+    - - 2
+      - 3
+      - {dock_name: t01}
+    - - 3
+      - 2
+      - {undock_name: t01}
+    - - 2
+      - 4
+      - {}
+    - - 4
+      - 2
+      - {}
+    - - 4
+      - 5
+      - {}
+    - - 5
+      - 4
+      - {}
+    - - 0
+      - 4
+      - {is_bidirectional: false, undock_name: t03}
+    - - 6
+      - 7
+      - {}
+    - - 7
+      - 6
+      - {}
+    - - 8
+      - 5
+      - {}
+    - - 5
+      - 8
+      - {}
+    - - 5
+      - 7
+      - {}
+    - - 7
+      - 5
+      - {}
+    - - 6
+      - 9
+      - {}
+    - - 9
+      - 6
+      - {}
+    - - 9
+      - 10
+      - {}
+    - - 10
+      - 9
+      - {}
+    - - 10
+      - 11
+      - {}
+    - - 11
+      - 10
+      - {}
+    - - 11
+      - 9
+      - {}
+    - - 9
+      - 11
+      - {}
+    - - 6
+      - 11
+      - {}
+    - - 11
+      - 6
+      - {}
+    vertices:
+    - - 31.497350011452838
+      - -7.010705617451132
+      - {dock_name: t03, is_charger: true, is_parking_spot: true, name: bunker_dock,
+        spawn_robot_name: agilex_bunker}
+    - - 32.514600955938036
+      - -7.496192545122129
+      - {dock_name: t02, is_charger: true, is_parking_spot: true, name: hunter_dock,
+        spawn_robot_name: agilex_hunter}
+    - - 30.826555899758343
+      - -11.373974022382042
+      - {name: ''}
+    - - 31.755378335558508
+      - -11.8047336942564
+      - {dock_name: t01, is_charger: true, is_parking_spot: true, name: dock, spawn_robot_name: scout2.0}
+    - - 29.857371491472364
+      - -10.943214350507683
+      - {name: ''}
+    - - 28.993963286942293
+      - -13.11992757356908
+      - {name: ''}
+    - - 41.98107412346449
+      - -18.20225545384438
+      - {is_parking_spot: true, merge_radius: 0.5, name: hall4}
+    - - 37.93369283078393
+      - -16.92076282742009
+      - {is_parking_spot: true, name: floor_door}
+    - - 14.336552744212609
+      - -6.837526907918444
+      - {is_parking_spot: false, name: corridor_end}
+    - - 42.43902344921783
+      - -20.375389782793732
+      - {dock_name: '', is_parking_spot: true, merge_radius: 0.5, name: hall1}
+    - - 44.52238718419014
+      - -19.36067388830456
+      - {is_parking_spot: true, merge_radius: 0.5, name: hall2}
+    - - 43.97844498602246
+      - -17.110394508495638
+      - {dock_name: '', is_parking_spot: true, merge_radius: 0.5, name: hall3}
+lifts: {}
